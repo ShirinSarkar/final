@@ -1,0 +1,491 @@
+
+@font-face {
+    font-family: 'titr';
+    src:url(../fonts/NotoSerif-BoldItalic.ttf);
+}
+
+@font-face {
+
+    font-family:'text';
+    src:url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+
+
+
+
+
+body{
+  
+    padding: 0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    background-color:rgb(66, 73, 73);
+    color: rgb(127, 140, 141);
+    background-size: 100%;
+    font-family:text;
+    font-weight: normal;
+    /* color: darkorange;  */
+   
+    
+}
+
+
+.col-12{
+ 
+    font-size: 3vw;
+   text-shadow: 5px 1px 5px 1px white;
+    /* position: fixed;
+    color: blue; */
+}
+
+
+.header{
+   
+     
+   
+    border: solid 5px gray;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(../images/13.jpg);
+    background-position: top center;
+    box-shadow:20px 20px 10px grey;
+    border-radius: 5%;
+    margin-top: 0px;
+    left:0;
+    right:0;
+    padding: 0px;
+   animation: slider 15s infinite linear;
+ 
+  
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+ 
+/* ---------7777777777777777-------java------------77777777777777777---------- */
+
+
+
+
+   
+
+.brow #inSection,  #theSection  ,#endSection {
+
+    transition: right 2s;
+    padding: 20px;
+    top:50%;
+    right: 100%;
+    position: absolute; 
+    font-size: 3vh;
+    font-family: titr;
+    color:  coral;
+
+    
+}
+
+
+.brow #iSection, #wouldSection,  #likeSection ,
+ #toSection, #thanksSection{
+
+    transition: right 4s;
+    padding: 40px;
+    top:200px;
+    right: 100%;
+    position: absolute; 
+    font-size: 2.5vh;
+    font-family: titr;
+    
+}
+
+.brow #allSection,  #ofSection, #youSection{
+    transition: right 6s;
+    padding: 60px;
+    top:150px;
+    right: 100%;
+    position: absolute; 
+    font-size: 3vh;
+    font-family: titr;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------777777777777777777777777777777777777-------------------------------- */
+
+
+
+.row1{
+    text-align: center;
+    background-position: top center;
+    top: 0;
+    margin: 0%;
+    /* background-image: url(../images/back.jpg); */
+}
+
+
+.row1 h1{
+    text-align: center;
+
+}
+
+p{
+    display: block;
+    width: 100%;
+}
+
+/* -----------77777777777777----------für respansiv------------7777777777777 */
+
+
+@media only screen and (max-width:1000px){
+    .col-12 {
+        font-size: 4vw;
+    }
+}
+ /* for tablets */
+
+@media only screen and (max-width:800px){
+    .col-12 {
+        font-size: 5vw;
+    }
+}
+ /* for mobiles */
+
+@media only screen and (max-width:550px){
+    .col-12 {
+        font-size: 7vw;
+    }
+}
+
+
+
+
+
+
+.row .col-12 h2{
+    text-align: right;
+}
+
+
+h1,h2,
+h3{
+    color: rgb(35, 50, 66);
+    font-size: 1.5em;
+    font-family: titr;
+    text-align: center;   
+}
+
+
+h2{
+    
+    font-size: 1em;
+    margin-top: 5px;
+      
+}
+
+
+
+[class*="col"]{
+    
+    float: left;
+    transition: 1s;
+}
+
+
+ .bbox .col-4{
+    text-align: justify;
+    padding: 3%;
+    box-shadow:20px 20px 10px grey;
+ }
+
+
+
+ .bbox i {
+     font-size: 0.5em;
+ }
+ .bbox i:hover{
+     font-size: 1em;
+ }
+
+
+.col-3 a{
+    color: rgb(153, 163, 164);
+    rgb(6, 21, 153);
+}
+
+
+
+
+
+.col-3 a:hover{
+
+    color: coral;
+    font-size: 2em;
+    transition: 1s;
+   
+}
+
+.col-4 h1 a{
+    color: rgb(153, 163, 164);
+    text-decoration: none;
+
+}
+
+.col-4 h1 a:hover{
+    color: coral;
+    font-size: 1.2em;
+    transition: 1s;
+
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    width: 100%;
+}
+
+/* ---------------------7777777777777---------size für respansiv-------------77777777777777 */
+.col-1{
+    width: 8.33%;
+ 
+}
+
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width: 24.99%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 49.99%;
+}
+
+.col-7{
+    width: 58.32%;
+}
+
+.col-8{
+    width: 66.65%;
+}
+
+.col-9{
+    width: 74.98%;
+}
+
+.col-10{
+    width: 74.98%;
+}
+.col-11{
+    width: 91.63%;
+}
+.col-12{
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width:600px){
+    [class*="col"]{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+
+@keyframes slider{
+    33%{background-image: url(../images/10.jpg)}
+   66%{background-image: url(../images/11.jpg)}
+    100%{background-image: url(../images/12.jpg)}
+
+}
+
+
+
+
+/* --------------------------------------------------------------- */
+
+
+
+
+
+
+.f{
+    font-family: titr;
+    display : inline-block;
+    width: 30%;
+    text-align: right;
+    vertical-align: top;
+    
+}
+
+
+
+/* input[type="radio"], */
+input[type="submit"];
+input[type="text-input"]{
+
+    text-align: right;
+   
+}
+
+
+ 
+
+.frow{
+    text-align: center;
+}
+
+
+
+#ani2 {
+  
+         position: relative; 
+        height: 100px;
+        width: 120px;
+        margin: 5px;
+        background-image: url("../images/contactus1.jpg");
+        background-size: cover;
+       transform: rotateY(360deg) scale3d(1);
+       transform-style: preserve-3d;
+       /* animation-iteration-count: infinite; */
+      
+}
+
+
+
+#ani2{
+   
+    backface-visibility: visible ;  
+       
+    transition: 5s;
+         animation-name: ani2; 
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        background-color: rgb(20, 20, 78);
+       
+         /* animation-iteration-count: 1;  */
+       
+
+  }
+
+  @keyframes ani2{
+    from{
+        left:0px;
+        top: 0px;
+        transform: rotateY(360deg) ;
+    }
+
+    to{
+       left:50%;
+       top:0sspx; 
+         transform: rotateY(360deg) scale3d(2);
+       
+    }
+} 
+#foto0{
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/s4.jpg);
+    background-repeat: no-repeat;
+    float:right;
+}
+
+
+
+
+.foto2{
+    width: 100%;
+    height:300px ;
+    background-image: url(../images/imail.jpg);
+    background-repeat: no-repeat;
+  float:right;
+}
+ 
+/* ---------7777777777777777-------java------------77777777777777777---------- */
+
+
+#man{
+    height: 700px;
+    border: 1px solid black;
+}
+
+.col-12 #bh{
+    height: 100px;
+}
+
+.col-6 #in{
+    height: 100px;
+}
+
+.col-6 #i{
+    height: 100px;
+}
+
+.col-6 #all{
+    height: 100px;
+}
+
+/* .brow button[onClick="bClick()"],button[onClick="oClick()"],button[onClick="xClick()"] {
+    border : 0.1px;
+    background-color: blueviolet;
+} */
+
+
+/* ----------------------------------- */
+
+
+
+.brow #inSection,  #theSection  ,#endSection {
+
+    transition: right 2s;
+    top:50px;
+    right: 100%;
+    position: absolute; 
+    
+}
+
+
+.brow #iSection, #wouldSection,  #likeSection ,
+ #toSection, #thanksSection{
+    transition: right 4s;
+    top:90px;
+    right: 100%;
+    position: absolute; 
+    
+}
+
+.brow #allSection,  #ofSection, #youSection{
+    transition: right 6s;
+    top:130px;
+    right: 100%;
+    position: absolute; 
+}
